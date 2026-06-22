@@ -1,41 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Мой сайт</title>
 
 <style>
-body{
-    font-family: Arial;
-    background:#f0f2f5;
-    text-align:center;
-    padding-top:100px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-h1{
-    color:#0066ff;
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#0077ff;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:40px 20px;
 }
 
 .card{
     background:white;
-    width:300px;
-    margin:auto;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    width:280px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
 }
 </style>
 
 </head>
 <body>
 
-<div class="card">
-    <h1>Привет!</h1>
-    <p>Это мой первый сайт.</p>
-    <button onclick="alert('Спасибо за посещение!')">
-        Нажми меня
-    </button>
-</div>
+<header>
+    <h2>Мой сайт</h2>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Обо мне</a>
+        <a href="#">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Добро пожаловать!</h1>
+    <p>Я создал этот сайт самостоятельно на GitHub Pages.</p>
+
+    <a class="btn" href="#" onclick="alert('Спасибо за посещение сайта!')">
+        Узнать больше
+    </a>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Обо мне</h3>
+        <p>Здесь будет информация обо мне.</p>
+    </div>
+
+    <div class="card">
+        <h3>Мои проекты</h3>
+        <p>Здесь будут мои работы и идеи.</p>
+    </div>
+
+    <div class="card">
+        <h3>Контакты</h3>
+        <p>Здесь будут способы связи со мной.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Мой первый настоящий сайт
+</footer>
 
 </body>
 </html>
